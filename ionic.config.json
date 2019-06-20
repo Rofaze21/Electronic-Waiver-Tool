@@ -1,0 +1,7 @@
+{
+  "name": "waiverHandler",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

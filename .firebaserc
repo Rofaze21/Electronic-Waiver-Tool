@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "waiverSetup": "massvrwaiver",
+    "default": "massvrwaiver"
+  }
+}
