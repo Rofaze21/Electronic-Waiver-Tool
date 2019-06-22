@@ -1,0 +1,138 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Guardian Waiver Screen</ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+
+
+
+  <ion-grid> 
+    <ion-row > 
+      <ion-col class="ion-text-center"> 
+        <h2 >MassVR Minor Waiver Request
+        </h2>
+      </ion-col>
+    </ion-row>
+    
+  
+    <ion-row> 
+
+      <ion-col size-md = "8" offset-md = "2">  
+      <ion-card color = "dark" >
+        <ion-card-header >
+    
+            <ion-card-title> Greetings! A minor has requested a waiver to participate at MassVr. Please review the following information and sign the waiver. 
+
+              </ion-card-title>     </ion-card-header>  
+    
+    
+    
+              <ion-card-content>
+                  <ion-row> 
+                      <ion-col> 
+                        <div>  
+                          <ion-item> 
+                            <ion-label > 
+                               Email Address
+                            </ion-label>
+                           <ion-input [disabled] = "feildIsDisabled" [(ngModel)] = "email"> </ion-input>  
+                           <ion-button type = "text" expand="block" (click) = "Save()" > Enter </ion-button>
+                           <ion-button  expand="block" (click) = "Edit()" > Edit </ion-button>
+                          </ion-item>
+                         
+
+                      </div> 
+                      </ion-col> 
+                  </ion-row>
+                
+              </ion-card-content>
+    
+      </ion-card>
+         </ion-col>
+        </ion-row>
+
+
+          <ion-card>  
+
+            <ion-card-header>
+              <ion-card-title text-center>
+
+              <strong>Information</strong>
+              </ion-card-title>
+
+            </ion-card-header>
+            
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+
+              
+                                        
+                <ion-col size-md = 6>
+                  <ion-card>  
+
+        <ion-card-header text-center>  <ion-card-title> 
+
+          <u> Description </u>
+        </ion-card-title> </ion-card-header>     
+        
+        <ion-card-content>
+
+            Strap a VR headset to your head and interact with a exhilarating map while battling with friends.
+
+        </ion-card-content>
+                  </ion-card>
+
+                </ion-col>
+                  <ion-col size-md = 6>
+                  <ion-card >  
+
+                      
+                      <ion-card-content>
+              
+                  
+                       <strong>  Old Orchard </strong>
+
+                        <br> 4847 Old Orchard Shopping Center
+                        Skokie, IL 60077
+                        <br> info@massvr.com
+                        <br> (872)225-2869                       
+
+                      </ion-card-content>
+                                </ion-card>
+                              </ion-col>
+                              
+                
+              </ion-row>
+              <ion-col size-md = 4>  
+                  <ion-card>
+                    <ion-card-header text-center>
+
+                      <ion-card-title>
+                        <u>Contact Us</u>
+                      </ion-card-title>
+
+                    </ion-card-header>
+                    <ion-card-content >
+
+                        Phone Number: (872) 225-2869
+
+                      </ion-card-content>  
+                                          </ion-card>
+                      
+                                      </ion-col>
+              </ion-grid>
+              
+            </ion-card-content>
+
+          </ion-card>
+    
+    </ion-grid>
+    
+    
+    
+    </ion-content>

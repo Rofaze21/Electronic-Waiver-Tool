@@ -1,0 +1,134 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Minor Screen</ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+
+  <ion-grid> 
+    <ion-row > 
+      <ion-col class="ion-text-center"> 
+        <h2 >Minors require parental permission to play</h2>
+      </ion-col>
+    </ion-row>
+    
+  
+  
+  <ion-row> 
+
+  <ion-col size-md = "8" offset-md = "2">  
+  <ion-card color = "dark" >
+    <ion-card-header >
+
+        <ion-card-title> Please select an option for a guardian to review and sign a waiver
+          </ion-card-title>     </ion-card-header>  
+
+
+
+          <ion-card-content>
+              <ion-row> 
+                  <ion-col> 
+                    <div>  
+                      <ion-item> 
+                        <ion-label position="stacked"> 
+                          <strong>  Parent Email Address </strong> 
+                        </ion-label>
+                       <ion-input  [(ngModel)] = "email"> </ion-input>  
+                      </ion-item>
+                      <ion-button type = "text" expand="full" (click) = "sendEmail()" > Send Email </ion-button>
+                      
+                      <ion-list > 
+                          <ion-item *ngIf = "sentToEmails.length == 1 && firstTimeEmail == true" >
+                            
+                              <ion-label  > Status: Not Sent </ion-label>
+                          </ion-item>
+
+
+                        <ng-container  *ngIf = "firstTimeEmail == false">  
+                            <ion-item  color = "primary" *ngFor = "let item of sentToEmails; let i = index" [attr.data-index]="i"  >
+                                <ion-label  >
+                              Email sent to {{item}}
+                            </ion-label>
+                          </ion-item>
+
+                          </ng-container>
+                        
+                    </ion-list> 
+                   
+
+                  </div> 
+                  </ion-col> 
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                     <div>  
+                       <ion-item> 
+                         <ion-label position="stacked"> <strong>Parent Phone Number</strong>  </ion-label>
+                          <ion-input [(ngModel)] = "phoneNumber" > </ion-input>
+                          
+                          
+                        </ion-item> 
+                        <ion-button expand = "full" (click) = "sendSMS()" > Send SMS </ion-button>
+                        <ion-list > 
+                            <ion-item *ngIf = "sentToNumbers.length == 1 && firstTimeNumber == true" >
+                              
+                                <ion-label  > Status: Not Sent </ion-label>
+                            </ion-item>
+  
+  
+                          <ng-container  *ngIf = "firstTimeNumber == false">  
+                              <ion-item  color = "primary" *ngFor = "let item of sentToNumbers; let i = index" [attr.data-index]="i"  >
+                                  <ion-label  >
+                                SMS sent to {{item}}
+                              </ion-label>
+                            </ion-item>
+  
+                            </ng-container>
+                          
+                      </ion-list> 
+                    
+                    
+                    
+                    
+                      </div>
+                </ion-col>
+             </ion-row>
+          </ion-card-content>
+
+  </ion-card>
+     </ion-col>
+    </ion-row>
+<ion-row  >
+    <ion-col  class="ion-align-self-center"  size-md = "8" offset-md = "2">
+  <ion-card color = "dark">
+
+    <ion-card-header >
+        <ion-card-title>    Alternatively, If you have a waiver ID, please enter it here.      </ion-card-title>
+
+      </ion-card-header>
+
+          <ion-card-content>
+              <ion-row>
+                  <ion-col> 
+                      
+                      <ion-item>
+                        <ion-input> </ion-input>   
+                         <ion-button (click) = "readWaierID()" > Enter </ion-button>
+                      </ion-item>
+                      <ion-label> Status: No Waiver ID </ion-label>
+
+                  </ion-col>
+              </ion-row> 
+          </ion-card-content>
+  </ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+
+
+</ion-content>
