@@ -20,5 +20,6 @@
 
 
 *What minors See when they visit a MassVr location*
+<br/>
 <img src = "Images/ElectronicSignature.png" height = 450px/>
 
