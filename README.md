@@ -19,7 +19,7 @@
 - Live updates every 10 seconds to see if parents have signed the waiver
 
 
-*What minors See when they visit a MassVr location*
+**What minors See when they visit a MassVr location**
 <br/>
-<img src = "Images/ElectronicSignature.png" height = 450px/>
+> <img src = "Images/ElectronicSignature.png" height = 450px/>
 
