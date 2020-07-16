@@ -5,7 +5,7 @@
 ### This tool was created for MassVr so that minors who visit their locations without their parents can make their parents sign the liability waivers over text or email. 
 
 # Things I learned
-- I learned to use the Ionic Framework for creating web applications
+- I learned to use the Ionic Framework for creating web applications. This was my first time using this incredibly powerful framework. Around the same time I had an idea for WesEvents and made that a reality. See [here](https://github.com/Rofaze21/wesevents). 
 - I learned how to manage dependencies across projects 
 - I learned to utlize Twilio for sending SMS messages
 - Learned how to use Firebase Cloud functions to deploy custom functions
