@@ -1,4 +1,4 @@
-# Electronic Signature Tool
+# ⛑️ Electronic Signature Tool
 
 > **Note:** This tool does not have a live interactive demo as the functionality for sending emails and SMS as well as the database for authenticating users resides in MassVr's private servers. 
 ## What is it?
